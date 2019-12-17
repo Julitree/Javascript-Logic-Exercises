@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<h1>Organiza estos numeros</h1>
+<p id="demo"></p>
+<input type="submit" value="Change Number" onclick="organizandoDatos()">
+<p id="demo2"></p>
+
+<body>
+    <script>
+        /*Question 1: Clean the room function: given an input of [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20],
+        make a function that organizes these into individual array that is ordered.
+        For example answer(ArrayFromAbove) should return: [[1,1,1,1],[2,2,2], 4,5,10,[20,20], 391, 392,591].
+        Bonus: Make it so it organizes strings differently from number types. i.e. [1, "2", "3", 2] should return [[1,2], ["2", "3"]]*/
+
+        let valores = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20];
+        let tempArray = [];
+        valores.sort(function (a, b) {
+            return a - b;
+        });
+
+         function find(arr, tar){
+             for (let i = 0; i < arr.lenght ; i++){
+                 for (let j = 0; j < arr.lenght; j++ ){
+                     if(arr[i] === arr[j]){
+                        .push(tempArray)
+                     }
+                 }
+             }
+         }
+        /* ===== ESTO ESTA BIEN
+                var similarValues = [];
+                var diferentsValues = [];
+                var iguales = 0;
+                var y;
+                var x = valores.filter(function (item, index, array) {
+                    if (array.indexOf(item) != index) {
+                        similarValues.push(diferentsValues[item[1]]);
+                    } else {
+                        diferentsValues.push(similarValues[item]);
+        
+                    }
+                });
+         AQUI TERMINA ====*/
+
+        // for( let i = 0; i < similarValues.length; i++){
+        //     for(let p = 0; p < diferentsValues.length; p++){
+        //         if(similarValues[i] == diferentsValues[p]){
+        //             iguales++
+        //         }
+        //     }
+        // }
+
+        // console.log(diferentsValues.push([similarValues]));
+
+        // for(valores.length of similarValues){
+        //     // if(similarValues == valores)
+        //     console.log('valores.push([])');
+        // }
+
+
+
+        // innerIndex = 0;
+        // tempArray = [];
+        // newValores = [];
+        // valores.forEach(function(value, index){
+        //     if(value = valores[index - 1]) {                
+        //         tempArray.push(value);
+        //         console.log(index, value, tempArray);
+        //     } else if(tempArray.length) {
+        //         newValores.push(tempArray);
+        //         tempArray = []
+        //         tempArray.push(value);
+        //     }
+        // })
+        // console.log(newValores)
+    </script>
+</body>
+
+</html>

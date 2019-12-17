@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* Write a javascript function that takes an array of numbers and a target number. 
+         The function should find two different numbers in the array that, 
+         when added together, give the target number. 
+         For example: answer([1,2,3], 4)should return [1,3]*/
+
+
+
+        let valores = [1, 2, 4, 301, 299, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20];
+        function find(arr, tar) {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j <arr.length ; j++) {
+                    if (arr[i] + arr[j] === tar) return [i , j];
+                }
+            }
+            return false;
+        }
+
+        console.log(find(valores, 600));
+
+    </script>
+</body>
+
+</html>
