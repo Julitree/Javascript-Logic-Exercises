@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+/*Determinar si un año dado es bisiesto..
+
+Determine if a given year is a leap year
+*/
+
+
+var chooseYear = prompt('escribe annio');
+var convert = Number(chooseYear);
+var initYear = 1900;
+var finalYear = 2050;
+var bisiesto = []
+var noBiniesto = []
+
+var bisiestoNoBisiesto = function(){
+    for (initYear; initYear <= finalYear; initYear ++){
+        if (initYear % 4 == 0){
+             bisiesto.push(initYear);
+        }else {
+            noBiniesto.push(initYear);
+        }
+      };
+};
+
+
+var x = false;
+
+function  seleccionAnnio(annio){
+    for(i=0; i < bisiesto.length; i++ ){
+        if(bisiesto[i] == annio){
+        x = true
+        break
+        }
+    } 
+    if(x === true){
+        console.log("Si es bisiesto")
+    }else{
+        console.log("No es bisiesto")
+    }
+}
+
+bisiestoNoBisiesto();
+seleccionAnnio(convert);
+
+</script>
+</body>
+</html>
