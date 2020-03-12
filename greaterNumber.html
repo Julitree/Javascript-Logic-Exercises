@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+/* Crear un programa que le pida al usuario dos números en un Prompt y luego muestre 
+en un alerta el número mayor.
+
+
+Create a program that asks the user for two numbers in a Prompt and then displays
+in an alert the greater number.*/
+
+var num1 =  prompt("Write Number");
+var num2 =  prompt("Write Number");
+
+var numMayor = function(elem1, elem2){
+    if(elem1 > elem2){
+        console.log("The greater number is  " + elem1)
+    }else{
+        console.log("The greater number is  " + elem2)
+    };
+}
+numMayor(num1, num2);
+
+
+
+</script>
+</body>
+</html>
