@@ -20,7 +20,11 @@ var num1 =  prompt("Write Number");
 var num2 =  prompt("Write Number");
 
 var numMayor = function(elem1, elem2){
-    if(elem1 > elem2){
+
+    if (elem1 == elem2){
+        console.log("Your numbers are equal, try again")
+    }
+    else if(elem1 > elem2){
         console.log("The greater number is  " + elem1)
     }else{
         console.log("The greater number is  " + elem2)
