@@ -1,0 +1,31 @@
+<script>
+let date = new Date();
+let day =  date.getDay();
+let month = date.getMonth();
+let year = date.getFullYear();
+
+const div = document.getElementById('boton');
+
+function myFunction(){
+    if(day< 10){
+        day = '0'+day ;
+    }if(month < 10){
+        month  = '0'+month ;
+    }
+    var linea =  `${day} - ${month} - ${year}`;
+    var esla =  `${day} / ${month} / ${year}`;
+    var linea =  `${month} - ${day} - ${year}`;
+    let otro = `${month}/ ${day} / ${year}`;
+
+    let dos = [linea, esla , linea, otro];
+
+    for(i=0; i<dos.length; i++){
+        let clone = dos[i];
+        let parrafo = document.createElement('p');
+        div.appendChild(parrafo);
+        parrafo.innerHTML = clone;
+    }
+
+}
+
+</script>
